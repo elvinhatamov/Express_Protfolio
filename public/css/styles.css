@@ -1,0 +1,365 @@
+/* // Filename: styles.css
+// Student: Elvin Hatamov
+// Student ID: 301419466
+// Date: October 2, 2023 */
+
+/* body design */
+
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  body {
+    font-family: Arial, sans-serif;
+    color: #333; 
+  }
+  
+  /* Create a consistent header style */
+  header {
+    background-color: #007bff; /* Change to your preferred header background color */
+    color: #fff; /* Change to your preferred header text color */
+    padding: 2px 0;
+  }
+  
+
+  .navbar {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  .nav-links li {
+    margin-right: 20px;
+  }
+  .nav-links a:hover {
+    color: #0056b3; /* Change to your preferred hover color */
+  }
+  
+  /* Style the logo */
+  .logo img {
+    max-width: 150px;
+    font-weight: bold;
+  }
+  
+  /* Add styles for buttons */
+  .button {
+    background-color: #007bff; /* Change to your preferred button color */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #0056b3; /* Change to your preferred button hover color */
+  }
+  
+  /* Add styles for cards (used in the Projects page) */
+  .card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-image {
+    max-width: 200px; /* Adjust the maximum width of the image */
+    border-radius: 50%; /* To make the image circular */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: transform 0.2s; /* Add a hover effect */
+  }
+  
+  .profile-image:hover {
+    transform: scale(1.05); /* Increase size on hover */
+  }
+  
+  .project-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-card img {
+    max-width: 200px; /* Adjust the maximum image width as needed */
+    margin-right: 20px;
+    border-radius: 5px;
+  }
+  
+  .project-info {
+    flex: 1;
+  }
+  
+  .project-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .project-info p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  /* ... (previous styles) */
+
+/* Add styles for the services grid (Services page) */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+    gap: 20px;
+  }
+  
+  /* Style the service cards (Services page) */
+  .service-card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .service-icon img {
+    max-width: 80px; /* Adjust the maximum icon width as needed */
+    margin-bottom: 10px;
+  }
+  .contact-info {
+    margin-bottom: 30px;
+  }
+  
+  .contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  /* Add styles for the contact form (Contact Me page) */
+  .contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .service-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .service-card p {
+    font-size: 16px;
+    color: #777;
+  }
+
+  .hero {
+    background-image: url('/assets/images/hero-background.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .hero-text {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text .mission {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  
+  .hero-text .button:hover {
+    background-color: #0056b3; /* Change to your preferred hover color */
+    color: #fff;
+  }
+  
+  .profile-photo img {
+    max-width: 100px; /* Adjust the maximum width for the small profile photo */
+    border-radius: 50%; /* To make the image circular */
+    margin-left: 20px; /* Add margin to separate the photo from text */
+  }
+
+  .social-media {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.2s;
+  }
+  
+  /* Make the LinkedIn icon smaller */
+  .social-icons img {
+    max-width: 20px; /* Adjust the maximum width to make it smaller */
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.2); /* Increase size on hover */
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+ /* ... (previous styles) */
+
+/* Style the About Me section */
+.about-me {
+  background-color: #f5f5f5;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 1000px;
+  max-height: 1000px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+.about-content {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 3px;
+}
+
+.profile-image img {
+  max-width: 30%;
+  border-radius: 20%; /* To make the image circular */
+}
+
+.description {
+  font-size: 14px;
+  margin-top: 3px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #0056b3; /* Change to your preferred hover color */
+}
+
+.social-media {
+  background-color: #f5f5f5;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.profile-photo img {
+  max-width: 100px; /* Adjust the maximum width for the small profile photo */
+  border-radius: 50%; /* To make the image circular */
+  margin-bottom: 20px;
+}
+
+  
+  
